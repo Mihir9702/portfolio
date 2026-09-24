@@ -1,6 +1,7 @@
 import type { StaticImageData } from 'next/image'
 import adiyaOs from '@/assets/adiya-os.png'
 import aura from '@/assets/aura.png'
+import discord from '@/assets/discord.png'
 import jump from '@/assets/jump.png'
 
 export type Project = {
@@ -48,5 +49,16 @@ export const projects: Project[] = [
       { href: 'https://mihir9702.github.io/jump/', label: 'Play it' },
       { href: 'https://github.com/Mihir9702/jump', label: 'Source' },
     ],
+  },
+  {
+    title: 'Discord clone',
+    description:
+      'Discord, reverse-engineered and rebuilt from scratch: friends, DMs, servers with text channels, invite links, roles and moderation, and live updates over WebSockets.',
+    stack: ['TypeScript', 'React', 'GraphQL', 'Node.js', 'PostgreSQL'],
+    image: {
+      src: discord,
+      alt: 'The Discord clone sign-in page: a dark login card on a blurple background, with cartoon stickers around it',
+    },
+    links: [{ href: 'https://github.com/Mihir9702/discord', label: 'Source' }],
   },
 ]
