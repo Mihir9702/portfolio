@@ -31,7 +31,7 @@ export const projects: Project[] = [
     stack: ['Python', 'FastAPI', 'PostgreSQL', 'React', 'TypeScript'],
     image: {
       src: aura,
-      alt: 'The Aura overview: $500.00 of paper capital held entirely in cash, beside a checklist of what must be ready before the first trade',
+      alt: 'The Aura overview: a $500.00 paper account with its equity double-underlined, five strategy pods on a lifecycle grid, and the entry halt and full kill controls',
     },
     links: [{ href: 'https://github.com/Mihir9702/Aura', label: 'Source' }],
   },
