@@ -1,5 +1,6 @@
 import type { StaticImageData } from 'next/image'
 import adiyaOs from '@/assets/adiya-os.png'
+import aura from '@/assets/aura.png'
 import jump from '@/assets/jump.png'
 
 export type Project = {
@@ -28,6 +29,10 @@ export const projects: Project[] = [
     description:
       'A paper-trading research workspace for US stocks and ETFs, designed around an AI "investment committee" kept in check by deterministic risk rules. The foundation is built and tested: owner sign-in, a double-entry ledger, kill switches and live updates. The trading engine is designed but not built yet.',
     stack: ['Python', 'FastAPI', 'PostgreSQL', 'React', 'TypeScript'],
+    image: {
+      src: aura,
+      alt: 'The Aura overview: $500.00 of paper capital held entirely in cash, beside a checklist of what must be ready before the first trade',
+    },
     links: [{ href: 'https://github.com/Mihir9702/Aura', label: 'Source' }],
   },
   {
