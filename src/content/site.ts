@@ -9,6 +9,8 @@ export const site = {
   url: 'https://hellomihir.com',
   github: 'https://github.com/Mihir9702',
   linkedin: 'https://www.linkedin.com/in/mihirpatel7',
+  // Served from public/resume.pdf
+  resume: '/resume.pdf',
   // Add an address to show an "Email me" button in the contact section
   email: '',
 }

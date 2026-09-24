@@ -5,6 +5,7 @@ const links = [
   { href: '#work', label: 'Work' },
   { href: '#stack', label: 'Stack' },
   { href: '#contact', label: 'Contact' },
+  { href: site.resume, label: 'Resume' },
 ]
 
 export default function Header() {

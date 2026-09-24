@@ -19,7 +19,8 @@ export default function Contact() {
             , or <TextLink href={`mailto:${site.email}`}>email</TextLink>
           </>
         )}
-        . I&apos;m also on <TextLink href={site.github}>GitHub</TextLink>.
+        . I&apos;m also on <TextLink href={site.github}>GitHub</TextLink>, and
+        here&apos;s my <TextLink href={site.resume}>resume</TextLink>.
       </p>
     </section>
   )

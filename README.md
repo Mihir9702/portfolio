@@ -30,6 +30,8 @@ Everything the site says lives in `src/content/`:
 - `projects.ts`: the work list (screenshots go in `src/assets/`)
 - `skills.ts`: the stack list
 
+The resume linked from the header and the contact line is `public/resume.pdf`.
+
 The game is `src/components/Playfield.tsx`, and the palette is at the top of `src/app/globals.css`.
 
 ## Deploying
