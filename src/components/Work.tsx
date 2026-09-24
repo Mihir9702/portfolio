@@ -26,11 +26,13 @@ export default function Work() {
                   {project.stack.join(', ')}
                 </p>
               )}
-              {project.link ? (
-                <p className="mt-4 text-base">
-                  <TextLink href={project.link.href}>
-                    {project.link.label}
-                  </TextLink>
+              {project.links ? (
+                <p className="mt-4 flex gap-6 text-base">
+                  {project.links.map(link => (
+                    <TextLink key={link.href} href={link.href}>
+                      {link.label}
+                    </TextLink>
+                  ))}
                 </p>
               ) : (
                 project.private && (
