@@ -1,6 +1,6 @@
 # Portfolio
 
-My personal site: [mihir-patel.vercel.app](https://mihir-patel.vercel.app)
+My personal site: [hellomihir.com](https://hellomihir.com)
 
 The name at the top of the page is a tiny platformer. Run with ← → (or A / D), jump with space, and on a phone tap where you want to go. The letters are one-way platforms, and the player is the cyan square from my game [Jump](https://mihir9702.github.io/jump/).
 
@@ -27,6 +27,15 @@ The game is `src/components/Playfield.tsx`, and the palette is at the top of `sr
 
 ## Deploying
 
-The site deploys on Vercel. Metadata, the sitemap and the social preview image use Vercel's production domain, so adding a custom domain in Vercel needs no code changes.
+The site deploys on Vercel from `main`. The domain, hellomihir.com, is registered with Cloudflare, which also hosts its DNS. Two records point it at Vercel:
+
+| Type  | Name  | Content                                | Proxy status |
+| ----- | ----- | -------------------------------------- | ------------ |
+| A     | `@`   | the IP Vercel shows for hellomihir.com | DNS only     |
+| CNAME | `www` | the target Vercel shows for www        | DNS only     |
+
+Keep both records on DNS only (grey cloud). Vercel issues the certificates, and Cloudflare's proxy gets in the way of that. In Vercel, hellomihir.com is the primary domain and www redirects to it.
+
+Metadata, the canonical link, the sitemap, robots.txt and the social preview image all use `url` from `src/content/site.ts`, so changing domains is a one-line edit.
 
 Fonts: Pixelify Sans and Atkinson Hyperlegible Next, both under the SIL Open Font License (copies in `src/assets/fonts/`).
