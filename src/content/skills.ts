@@ -13,7 +13,7 @@ export const skills = [
   },
   {
     title: 'Databases',
-    items: ['PostgreSQL', 'Redis', 'MongoDB', 'Firebase'],
+    items: ['PostgreSQL', 'Prisma', 'Redis', 'MongoDB', 'Firebase'],
   },
   {
     title: 'Systems',

@@ -17,7 +17,7 @@ export const projects: Project[] = [
     title: 'Adiya OS',
     description:
       'Internal operating system for Adiya Pharma Inc. that runs orders, artwork, production, quality and shipping for labels, inserts and cartons in one place.',
-    stack: [],
+    stack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma'],
     image: {
       src: adiyaOs,
       alt: 'The Adiya OS sign-in page, next to the line "Labels, inserts and cartons, run in one place."',
