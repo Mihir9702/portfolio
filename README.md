@@ -9,7 +9,7 @@ My personal site, live at [hellomihir.com](https://hellomihir.com).
 
 The name at the top of the page is a tiny platformer. Run with ← → or A D, jump with space, ↑ or W, and press ↓ or S to drop through a letter. On a phone, tap where you want to jump. The letters are one-way platforms, and the player is the cyan square from my game [Jump](https://mihir9702.github.io/jump/).
 
-The Work section covers Adiya OS (private), [Aura](https://github.com/Mihir9702/Aura), [Jump](https://github.com/Mihir9702/jump) and a [Discord clone](https://github.com/Mihir9702/discord).
+The Work section covers Adiya OS (private), [Aura](https://github.com/Mihir9702/Aura), a [Discord clone](https://github.com/Mihir9702/discord) and [Jump](https://github.com/Mihir9702/jump).
 
 Built with Next.js 16 (App Router), React 19, Tailwind CSS 4 and TypeScript.
 
