@@ -1,16 +1,32 @@
-import React from 'react'
-import Heading from './Heading'
+import { site } from '@/content/site'
+import PlayerMark from './PlayerMark'
 
-const Header: React.FC = () => {
+const links = [
+  { href: '#work', label: 'Work' },
+  { href: '#stack', label: 'Stack' },
+  { href: '#contact', label: 'Contact' },
+]
+
+export default function Header() {
   return (
-    <header>
-      <div className="min-w-7xl mx-auto flex h-screen items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-gray-300">
-          <Heading />
-        </div>
-      </div>
+    <header className="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6">
+      <a href="#top" aria-label={site.name}>
+        <PlayerMark className="size-6" />
+      </a>
+      <nav aria-label="Main">
+        <ul className="flex gap-6 text-base">
+          {links.map(link => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className="text-muted transition-colors hover:text-ink"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </header>
   )
 }
-
-export default Header

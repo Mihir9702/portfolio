@@ -1,46 +1,32 @@
-<div id="top"></div>
-<!-- PROJECT LOGO -->
-<br />
-<h2 align="center">Personal Website</h2>
+# Portfolio
 
-  <p align="center">
-    <a href="https://www.mihirpatel.co"><strong>Visit Site »</strong></a>
-  </p>
-</div>
+My personal site: [mihir-patel.vercel.app](https://mihir-patel.vercel.app)
 
-## About The Project
+The name at the top of the page is a tiny platformer. Run with ← → (or A / D), jump with space, and on a phone tap where you want to go. The letters are one-way platforms, and the player is the cyan square from my game [Jump](https://mihir9702.github.io/jump/).
 
-<p align="center">Personal Website I created to display my work and tell you a little bit more about me</p>
+Built with Next.js 16 (App Router), React 19, Tailwind CSS 4 and TypeScript.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Run it locally
 
-### Built With
+```sh
+npm install
+npm run dev
+```
 
-- [Next.js](https://nextjs.org/)
-- [Tailwind](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
+Then open http://localhost:3000.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+## Editing content
 
-<!-- GETTING STARTED -->
+Everything the site says lives in `src/content/`:
 
-## Getting Started
+- `site.ts`: name, role, location, social links, and an optional email for the contact line
+- `projects.ts`: the work list (screenshots go in `src/assets/`)
+- `skills.ts`: the stack list
 
-To get a local copy up and running follow these simple example steps.
+The game is `src/components/Playfield.tsx`, and the palette is at the top of `src/app/globals.css`.
 
-### Installation
+## Deploying
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Mihir9702/Portfolio.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Run the dev server on localhost
-   ```sh
-   npm run dev
-   ```
+The site deploys on Vercel. Metadata, the sitemap and the social preview image use Vercel's production domain, so adding a custom domain in Vercel needs no code changes.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+Fonts: Pixelify Sans and Atkinson Hyperlegible Next, both under the SIL Open Font License (copies in `src/assets/fonts/`).

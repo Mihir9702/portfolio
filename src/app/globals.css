@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+/* Colors from Jump's world: a hazy sky over dark green hills, and the cyan square you play as */
+:root {
+  --paper: #e9eee6;
+  --ink: #132420;
+  --muted: #50655e;
+  --line: rgb(19 36 32 / 0.16);
+  --player: #11b5c9;
+  --player-outline: #0a6f7c;
+  --player-eye: #132420;
+  --coin: #e3a92b;
+  color-scheme: light;
+}
+
+/* Night version of the same level */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #10201d;
+    --ink: #e4ecdd;
+    --muted: #97aca4;
+    --line: rgb(228 236 221 / 0.16);
+    --player: #3fd6e6;
+    --player-outline: #0e5a63;
+    --player-eye: #10201d;
+    --coin: #f0bd45;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: var(--font-atkinson);
+  --font-pixel: var(--font-pixelify);
+}
+
+@layer base {
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-paper font-sans text-lg text-ink antialiased;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--player) 35%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+  }
+}
+
+@utility text-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: var(--line);
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
