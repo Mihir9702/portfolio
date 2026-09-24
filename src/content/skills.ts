@@ -1,7 +1,7 @@
 export const skills = [
   {
     title: 'Languages',
-    items: ['TypeScript', 'JavaScript', 'Python', 'Java', 'SQL'],
+    items: ['TypeScript', 'JavaScript', 'Go', 'Python', 'Java', 'SQL'],
   },
   {
     title: 'Frontend',
@@ -9,14 +9,18 @@ export const skills = [
   },
   {
     title: 'Backend',
-    items: ['Node.js', 'Spring', 'Django', 'GraphQL', 'AWS'],
+    items: ['Node.js', 'FastAPI', 'Spring', 'Django', 'GraphQL'],
   },
   {
     title: 'Databases',
     items: ['PostgreSQL', 'Redis', 'MongoDB', 'Firebase'],
   },
   {
+    title: 'Systems',
+    items: ['Linux', 'Networking', 'Security', 'Docker', 'AWS'],
+  },
+  {
     title: 'Tools',
-    items: ['Docker', 'Git', 'Figma', 'Vim', 'Asana'],
+    items: ['Git', 'Figma', 'Vim', 'Asana'],
   },
 ]
