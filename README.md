@@ -1,8 +1,15 @@
-# Portfolio
+# hellomihir.com
 
-My personal site: [hellomihir.com](https://hellomihir.com)
+My personal site, live at [hellomihir.com](https://hellomihir.com).
 
-The name at the top of the page is a tiny platformer. Run with ← → (or A / D), jump with space, and on a phone tap where you want to go. The letters are one-way platforms, and the player is the cyan square from my game [Jump](https://mihir9702.github.io/jump/).
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshot-dark.png">
+  <img alt="The top of the site: my name in large pixel letters with the cyan square from Jump standing on them, a short introduction, and the start of the Work section" src="docs/screenshot-light.png">
+</picture>
+
+The name at the top of the page is a tiny platformer. Run with ← → or A D, jump with space, ↑ or W, and press ↓ or S to drop through a letter. On a phone, tap where you want to jump. The letters are one-way platforms, and the player is the cyan square from my game [Jump](https://mihir9702.github.io/jump/).
+
+The Work section covers Adiya OS (private), [Aura](https://github.com/Mihir9702/Aura) and [Jump](https://github.com/Mihir9702/jump).
 
 Built with Next.js 16 (App Router), React 19, Tailwind CSS 4 and TypeScript.
 
